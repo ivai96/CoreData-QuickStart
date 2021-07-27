@@ -16,6 +16,10 @@
 		80957A0326AF1B2F00FB44EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80957A0126AF1B2F00FB44EA /* LaunchScreen.storyboard */; };
 		80957A0E26AF1B3000FB44EA /* CoreData_QuickStartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80957A0D26AF1B3000FB44EA /* CoreData_QuickStartTests.swift */; };
 		80957A1926AF1B3000FB44EA /* CoreData_QuickStartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80957A1826AF1B3000FB44EA /* CoreData_QuickStartUITests.swift */; };
+		80957A3C26B00C2500FB44EA /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80957A3826B00C2500FB44EA /* Person+CoreDataClass.swift */; };
+		80957A3D26B00C2500FB44EA /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80957A3926B00C2500FB44EA /* Person+CoreDataProperties.swift */; };
+		80957A3E26B00C2500FB44EA /* Family+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80957A3A26B00C2500FB44EA /* Family+CoreDataClass.swift */; };
+		80957A3F26B00C2500FB44EA /* Family+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80957A3B26B00C2500FB44EA /* Family+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		80957A1426AF1B3000FB44EA /* CoreData QuickStartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreData QuickStartUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80957A1826AF1B3000FB44EA /* CoreData_QuickStartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData_QuickStartUITests.swift; sourceTree = "<group>"; };
 		80957A1A26AF1B3000FB44EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80957A3826B00C2500FB44EA /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		80957A3926B00C2500FB44EA /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		80957A3A26B00C2500FB44EA /* Family+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataClass.swift"; sourceTree = "<group>"; };
+		80957A3B26B00C2500FB44EA /* Family+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		809579F226AF1B2E00FB44EA /* CoreData QuickStart */ = {
 			isa = PBXGroup;
 			children = (
+				80957A3726B0092500FB44EA /* Model */,
 				809579F326AF1B2E00FB44EA /* AppDelegate.swift */,
 				809579F526AF1B2E00FB44EA /* SceneDelegate.swift */,
 				809579F726AF1B2E00FB44EA /* ViewController.swift */,
@@ -129,6 +138,17 @@
 				80957A1A26AF1B3000FB44EA /* Info.plist */,
 			);
 			path = "CoreData QuickStartUITests";
+			sourceTree = "<group>";
+		};
+		80957A3726B0092500FB44EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80957A3826B00C2500FB44EA /* Person+CoreDataClass.swift */,
+				80957A3926B00C2500FB44EA /* Person+CoreDataProperties.swift */,
+				80957A3A26B00C2500FB44EA /* Family+CoreDataClass.swift */,
+				80957A3B26B00C2500FB44EA /* Family+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +283,12 @@
 			files = (
 				809579F826AF1B2E00FB44EA /* ViewController.swift in Sources */,
 				809579F426AF1B2E00FB44EA /* AppDelegate.swift in Sources */,
+				80957A3E26B00C2500FB44EA /* Family+CoreDataClass.swift in Sources */,
+				80957A3D26B00C2500FB44EA /* Person+CoreDataProperties.swift in Sources */,
+				80957A3C26B00C2500FB44EA /* Person+CoreDataClass.swift in Sources */,
 				809579FE26AF1B2E00FB44EA /* CoreData_QuickStart.xcdatamodeld in Sources */,
 				809579F626AF1B2E00FB44EA /* SceneDelegate.swift in Sources */,
+				80957A3F26B00C2500FB44EA /* Family+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +471,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ivana.swiftui.demo.CoreData-QuickStart";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivana..CoreData-QuickStart";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,7 +490,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ivana.swiftui.demo.CoreData-QuickStart";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivana..CoreData-QuickStart";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
